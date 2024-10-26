@@ -1,0 +1,55 @@
+/* Dashboard.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F4F6F8; /* Light Gray Background */
+    color: #333; /* Dark Gray Text */
+}
+
+.dashboard-container {
+    display: flex;
+    background-color: rgb(245, 236, 224);
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.dashboard-title {
+    font-family: 'Poppins', sans-serif; /* Header Font */
+    font-size: 2.5rem;
+    color: #29cde2; /* Primary Color */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive layout */
+    gap: 20px; /* Space between charts */
+    width: 100%;
+    max-width: 1200px; /* Limit max width for better layout */
+}
+
+.chart-container {
+    background-color: #ffffff; /* White Background for Charts */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s;
+    min-height: 300px; /* Ensure enough height for each chart */
+}
+
+.chart-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.chart-title {
+    font-family: 'Poppins', sans-serif; /* Header Font */
+    font-size: 1.5rem;
+    color: #4A90E2; /* Primary Color */
+    text-align: center;
+    margin-bottom: 10px;
+}
